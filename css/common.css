@@ -1,0 +1,76 @@
+body {
+    /*Retira scroll na vertical*/
+    overflow: hidden;
+}
+
+.conteudo{
+    position: absolute; 
+    z-index: 3000;
+}
+  
+  /*Background animado*/
+  .bg_video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000;
+    background: url(img/background/background.jpg) no-repeat;
+    background-size: cover;
+
+    /*Desfoque no video*/
+    filter: blur(0px);
+}
+
+   /*Div transparente entre background e Img*/
+   .container {
+    background-color: black;
+    opacity: 50%;
+
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -8px;
+
+    min-height: 100%;
+    min-width: 100%;
+
+    max-height: 100%;
+    max-width: 100%;
+
+    z-index: 1000;
+    position: absolute;
+
+}
+
+.titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 100%;
+
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.texto {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 100%;
+
+    color: rgb(255, 255, 255);
+}
+
+/*Import fontes externas*/
+@font-face {
+    font-family: 'BlueScreen';
+    src: url('/fonts/BlueScreen.ttf');
+    font-weight: normal;
+    font-style: normal;
+}

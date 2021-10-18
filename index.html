@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Henrique</title>
+    <link rel="stylesheet" type="text/css" href="css/common.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/index/index.css" media="screen" />
+</head>
+
+<body>
+    <!-- Background Animado -->
+    <div id="backgroundMovie">
+        <video autoplay loop poster="img/background/background.jpg" class="bg_video">
+            <source src="img/background/animatedBackground.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Div transparente -->
+    <div class="container"></div>
+
+    <!-- Div Options  -->
+    <div id="conteudo">
+        <div id="homeOptions">
+            <img id="imgOptions" src="img/options/homeOptions.png" alt="Workplace" usemap="#mapOptions">
+
+            <map name="mapOptions">
+                <area target="" alt="" title="" href="aboutMe.html" onmouseover="setImgAboutMe()"
+                    onmouseleave="setImgOptions()"
+                    coords="382,661,348,669,303,653,262,629,230,607,199,578,193,552,209,504,217,477,225,455,235,438,363,483,464,572"
+                    shape="poly">
+                <area target="" alt="" title="" href="projects.html" onmouseover="setImgProjects()"
+                    onmouseleave="setImgOptions()"
+                    coords="827,628,853,644,891,650,938,652,976,648,1011,642,1035,632,1055,501,929,483,806,500"
+                    shape="poly">
+            </map>
+        </div>
+
+        <!-- Div Apresentação Guilherme -->
+        <div id="apresentacao">
+            <p class="titulo"> Oi, seja bem vindo!</p>
+            <div class="texto">
+                <center>
+                    <p>Este é o meu portifolio de Desenvolvedor!</p>
+                    <p>Clique em <b>About Me</b> para me conhecer ou em <b>Projects</b> para visualiza-los. </p>
+                </center>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- JS da pagina -->
+    <script type="text/javascript" src="js/index.js"></script>
+
+    <!-- Jquery for JS img map responsive -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/img-map-responsive/jquery.rwdimageMaps.min.js"></script>
+
+    <script>
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+        });
+    </script>
+    <!-- End -->
+
+
+</body>
+
+</html>
