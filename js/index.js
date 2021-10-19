@@ -14,7 +14,7 @@ function setImgProjects() {
     document.getElementById("imgOptions").src = "img/options/projectsSelect.png";
 }
 /*END*/
-
+ 
 /*Effect Hologram*/
 let bg = document.getElementById('homeOptions');
 let count = 20;

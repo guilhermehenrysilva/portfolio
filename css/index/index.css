@@ -16,7 +16,7 @@
     /*Box Effect Hologram*/
     .box{
         position: absolute;
-        background: url(/img/options/HomeOptions.png);
+        background: url(../../img/options/homeOptions.png);
         background-attachment: fixed;
     }
 
@@ -26,15 +26,16 @@
         bottom: 0;
         max-width: 100%;
         max-height: 100%;
-        
     }
 
     /*Div Apresentação Guilherme*/
-    #apresentacao {
+    #bemVindo {
         z-index: 3000;
 
         background-color: transparent;
         opacity: 100%;
+
+        text-align: center;
 
         max-width: 30%;
         max-height: 100%;
