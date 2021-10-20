@@ -40,10 +40,10 @@
 
         <!-- Div Apresentação Guilherme -->
         <div id="bemVindo">
-            <p class="titulo"> Oii, seja bem vindo!</p>
+            <p class="titulo"> Oi, seja bem vindo!</p>
             <div class="texto">
-                    <p>Este é o meu portifolio de Desenvolvedor!</p>
-                    <p>Clique em <b>About Me</b> para me conhecer ou em <b>Projects</b> para visualiza-los. </p>
+                <p>Este é o meu portifolio de Desenvolvedor!</p>
+                <p>Clique em <b>About Me</b> para me conhecer ou em <b>Projects</b> para visualiza-los. </p>
             </div>
         </div>
 
@@ -57,10 +57,12 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     -->
     <script src="js/jquery.min.js"></script>
-    <script src="js/img-map-responsive/jquery.rwdimageMaps.min.js"></script>
+    <script src="js/img-map-responsive/jquery.rwdImageMaps.js"></script>
 
     <script>
-        $('img[usemap]').rwdImageMaps();
+        $(document).ready(function (e) {
+            $('img[usemap]').rwdImageMaps();
+        });
     </script>
     <!-- End -->
 
