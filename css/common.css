@@ -28,7 +28,7 @@ body {
    /*Div transparente entre background e Img*/
    .container {
     background-color: black;
-    opacity: 50%;
+    opacity: 60%;
 
     margin-top: -8px;
     margin-left: -8px;
