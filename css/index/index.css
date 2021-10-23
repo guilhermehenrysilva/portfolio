@@ -32,9 +32,6 @@
     #bemVindo {
         z-index: 3000;
 
-        background-color: transparent;
-        opacity: 100%;
-
         text-align: center;
 
         max-width: 30%;
@@ -46,9 +43,9 @@
         top: 15%;
         bottom: 15%;
 
-        /*Borda*/
+        /*Borda
         border-radius: 5%;
         border-style: solid;
-        border-color: rgb(255, 255, 255);
+        border-color: rgb(255, 255, 255); */
     }
 
