@@ -1,1 +1,52 @@
-#conteudo{}
+.matriz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    position: absolute;
+    z-index: 3000;
+}
+
+.panel{
+    border-style: solid;
+    border-color: red;
+
+    background-color: rgba(0, 0, 0, 0.801);
+
+    min-width: 70%;
+    min-height: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Linhas*/
+.matriz .linha{
+    display: flex;
+    flex-direction: row;
+}
+
+/*ITEM - Posicao de exibicao dos projetos*/
+.matriz .item{
+    width: 300px;
+    height: 200px;
+
+    background-color: rgb(255, 166, 0);
+    margin: 30px;
+}
+
+@media (max-width: 600px){
+    .matriz .linha{
+        flex-direction: column;
+    }
+
+    .matriz{
+        overflow-y: scroll;
+    }
+}

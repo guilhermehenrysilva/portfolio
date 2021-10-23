@@ -2,11 +2,6 @@ body {
     /*Retira scroll na vertical*/
     overflow: hidden;
 }
-
-.conteudo{
-    position: absolute; 
-    z-index: 3000;
-}
   
   /*Background animado*/
   .bg_video {
