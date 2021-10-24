@@ -1,21 +1,52 @@
 /*JS - IMG OPTIONS*/
 /*Seta a imgOptions Padrão*/
-function setImgOptions() {
+let escolhendo = false;
+function setImgDefault() {
     document.getElementById("imgOptions").src = "img/options/homeOptions.png";
+    escolhendo = false;
 }
 
 /*Seta a img :hover - AboutMe*/
 function setImgAboutMe() {
     document.getElementById("imgOptions").src = "img/options/aboutMeSelect.png";
+    escolhendo = true;
 }
 
 /*Seta a img :hover - Projects*/
 function setImgProjects() {
     document.getElementById("imgOptions").src = "img/options/projectsSelect.png";
+    escolhendo = true;
 }
-/*END*/
- 
-/*Effect Hologram*/
+
+/*Effect Img Btn Colors*/
+let contador = 1;
+let crescente = true;
+if (!escolhendo) {
+    setInterval(function effectImg() {
+
+        while (crescente && !escolhendo) {
+            document.getElementById("imgOptions").src = "img/effect/homeOptions-" + contador + ".png";
+            contador++;
+            if (contador == 21) {
+                crescente = false;
+                contador = 20;
+            }
+            break;
+        }
+
+        while (!crescente && !escolhendo) {
+            document.getElementById("imgOptions").src = "img/effect/homeOptions-" + contador + ".png";
+            contador--;
+            if (contador == 0) {
+                crescente = true;
+                contador = 1;
+            }
+            break;
+        }
+    }, 80)
+}
+
+/*Effect Div Hologram*/
 let bg = document.getElementById('homeOptions');
 let count = 20;
 for (let i = 0; i < count; i++) {
@@ -36,3 +67,8 @@ setInterval(function () {
     }
 }, 30)
 /*END*/
+
+
+
+
+
