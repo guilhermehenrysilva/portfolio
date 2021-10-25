@@ -43,7 +43,7 @@ if (!escolhendo) {
             }
             break;
         }
-    }, 80)
+    }, 135)
 }
 
 /*Effect Div Hologram*/
