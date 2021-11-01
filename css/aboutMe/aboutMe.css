@@ -37,9 +37,12 @@
 }
 
 #panelText{
+    border-color: white;
+    border-style: solid;
     border-radius: 20px;
-    box-shadow: inset 0 0 9em rgba(71, 137, 223, 0.555), 0 0 4em rgba(185, 11, 228, 0.555);
-    background-color: rgba(0, 0, 0, 0.644);
+    box-shadow: inset 0 0 9em rgba(79, 126, 192, 0.899), 0 0 3em rgba(255, 255, 255, 0.899);
+  
+    background-image: linear-gradient(to bottom,rgba(79, 126, 192, 0.999),rgba(209, 199, 175, 0.689));
 
     min-height: 85%;
     min-width: 70%;
@@ -56,9 +59,17 @@
 }
 
 #panelMe{
+    border-color: white;
+    border-style: solid;
     border-radius: 20px;
-    box-shadow: inset 0 0 9em rgba(71, 137, 223, 0.555), 0 0 4em rgba(185, 11, 228, 0.555);
-    background-color: rgba(0, 0, 0, 0.644);
+
+    background-image: url(/img/aboutMe/silva.jpg);
+    background-repeat: no-repeat;
+    background-size: 130%;
+    opacity: 90%;
+
+    box-shadow: inset 0 0 9em rgba(79, 126, 192, 0.899), 0 0 3em rgba(255, 255, 255, 0.899);
+    background-color: rgba(79, 126, 192, 0.899);
 
     min-height: 85%;
     min-width: 24%;

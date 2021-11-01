@@ -23,13 +23,12 @@
 }
 
 .panel{
+    border-color: white;
+    border-style: solid;
     border-radius: 20px;
-    box-shadow: inset 0 0 9em rgba(158, 65, 212, 0.555), 0 0 4em rgba(192, 46, 143, 0.904);
-    background-color: rgba(0, 0, 0, 0.644);
-
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-
+    box-shadow: inset 0 0 9em rgba(13, 13, 14, 0.899), 0 0 3em rgba(251, 253, 255, 0.899);
+    background-image: linear-gradient(to bottom,rgba(6, 6, 7, 0.899),rgba(102, 48, 190, 0.657));
+    
     min-width: 80%;
     min-height: 80%;
     max-width: 90%;
@@ -56,13 +55,13 @@
     margin: 30px;
 
     border-radius: 10px;
-    box-shadow: inset 0 0 6em rgba(158, 65, 212, 0.555), 0 0 3em rgba(192, 46, 143, 0.904);
+    box-shadow: inset 0 0 9em rgba(65, 121, 200, 0.555), 0 0 4em rgba(56, 122, 197, 0.899);
 
     transition: .6s;
 }
 
 .matriz .item:hover{
-    box-shadow: inset 0 0 6em rgba(212, 65, 168, 0.555), 0 0 3em rgba(255, 255, 255, 0.904);
+    box-shadow: inset 0 0 6em rgba(250, 248, 249, 0.555), 0 0 3em rgba(255, 255, 255, 0.904);
 }
 
 @media (max-width: 600px){
