@@ -63,9 +63,10 @@
     border-style: solid;
     border-radius: 20px;
 
-    background-image: url(img/aboutMe/silva.jpg);
+    background-image: url('/img/aboutMe/silva.jpg');
     background-repeat: no-repeat;
     background-size: 130%;
+    background-position: center;
     opacity: 90%;
 
     box-shadow: inset 0 0 9em rgba(79, 126, 192, 0.899), 0 0 3em rgba(255, 255, 255, 0.899);
