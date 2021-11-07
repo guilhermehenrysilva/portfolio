@@ -11,6 +11,12 @@
 </head>
 
 <body>
+    <!-- blackScreen - Btn Voltar - FirstStart = false -->
+    <script>
+        function disableBlackScreen() {
+            localStorage.setItem("firstStart", "false");
+        }
+    </script>
 
     <!-- Background Animado -->
     <div id="backgroundMovie">
@@ -54,8 +60,8 @@
                     <img src="img/others/comingsoon.png" style="max-width: 100%; max-height: 100%; margin-top: 25px;">
                 </div>
             </div>
-            
-            <a class="hiperlink" href="index.html">
+
+            <a class="hiperlink" href="index.html" onclick="disableBlackScreen()">
                 <div class="btnVoltar">
                     VOLTAR
                 </div>

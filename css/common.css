@@ -61,6 +61,7 @@ body {
     font-size: 32px;
     line-height: 100%;
 
+    text-align: center;
     color: rgb(255, 255, 255);
 
     margin: 2%;
@@ -87,7 +88,6 @@ body {
     transition: .6s;
 }   
 
-
 .btnVoltar:hover{
     box-shadow: inset 0 0 30px rgb(134, 14, 214), 0 0 30px rgba(255, 255, 255, 0.904);
     color: rgb(134, 14, 214);
@@ -105,9 +105,7 @@ body {
 
 .iconSocial{
  margin-left: 7px;
- margin-right: 7px;
-
-    
+ margin-right: 7px;  
 }
 .iconSocial:hover .path{
     fill: rgb(134, 14, 214);

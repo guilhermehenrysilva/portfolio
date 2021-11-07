@@ -10,7 +10,18 @@
     <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
 </head>
 
-<body>
+<body onLoad="closeBlackScreen();">
+    <!-- BlackScreen -->
+    <div id="blackScreen">
+        <p> Guilherme Henrique Silva </p>
+        Portifolio
+    </br></br>
+        <svg>
+            <circle cx="70" cy="70" r="70"></circle>
+        </svg>
+
+    </div>
+
     <!-- Background Animado -->
     <div id="backgroundMovie">
         <video autoplay muted loop poster="img/background/background.jpg" class="bg_video">
@@ -48,8 +59,9 @@
             </div>
 
             <div id="social">
-                <a href="https://www.google.com.br" target="__blank">
-                    <svg class="iconSocial" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="mailto:ghs.guilherme.silva@gmail.com?subject=Portfolio Contato - Guilherme Henrique da Silva">
+                    <svg class="iconSocial" width="100" height="100" viewBox="0 0 100 100" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path class="path"
                             d="M91.6667 25C91.6667 20.4167 87.9167 16.6667 83.3333 16.6667H16.6666C12.0833 16.6667 8.33331 20.4167 8.33331 25V75C8.33331 79.5833 12.0833 83.3333 16.6666 83.3333H83.3333C87.9167 83.3333 91.6667 79.5833 91.6667 75V25ZM83.3333 25L50 45.8333L16.6666 25H83.3333ZM83.3333 75H16.6666V33.3333L50 54.1667L83.3333 33.3333V75Z"
                             fill="white" />
@@ -57,7 +69,8 @@
                 </a>
 
                 <a href="https://www.linkedin.com/in/guilhermehenrysilva/" target="__blank">
-                    <svg class="iconSocial" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="iconSocial" width="100" height="100" viewBox="0 0 100 100" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path class="path"
                             d="M80.667 14H19.315C16.381 14 14 16.325 14 19.188V80.805C14 83.672 16.381 86 19.315 86H80.667C83.603 86 86 83.672 86 80.805V19.188C86 16.325 83.603 14 80.667 14ZM35.354 75.354H24.67V40.995H35.354V75.354ZM30.012 36.297C29.1988 36.297 28.3935 36.1368 27.6423 35.8254C26.891 35.5141 26.2084 35.0578 25.6336 34.4826C25.0587 33.9074 24.6029 33.2245 24.292 32.473C23.9812 31.7216 23.8215 30.9162 23.822 30.103C23.822 28.4614 24.4741 26.8871 25.6349 25.7264C26.7956 24.5656 28.3699 23.9135 30.0115 23.9135C31.6531 23.9135 33.2274 24.5656 34.3881 25.7264C35.5489 26.8871 36.201 28.4614 36.201 30.103C36.201 31.7449 35.5491 33.3196 34.3886 34.4811C33.2281 35.6425 31.6539 36.2957 30.012 36.297ZM75.35 75.354H64.683V58.646C64.683 54.66 64.605 49.535 59.132 49.535C53.574 49.535 52.727 53.876 52.727 58.357V75.355H42.052V40.995H52.297V45.687H52.443C53.869 42.987 57.353 40.138 62.549 40.138C73.355 40.138 75.351 47.252 75.351 56.507V75.354H75.35Z"
                             fill="white" />
@@ -65,7 +78,8 @@
                 </a>
 
                 <a href="https://github.com/guilhermehenrysilva" target="__blank">
-                    <svg class="iconSocial" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="iconSocial" width="100" height="100" viewBox="0 0 100 100" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path class="path" fill-rule="evenodd" clip-rule="evenodd"
                             d="M49.998 11.963C28.461 11.963 11 29.425 11 50.965C11 68.196 22.172 82.814 37.671 87.968C39.623 88.329 40.333 87.128 40.333 86.091C40.333 85.167 40.299 82.716 40.282 79.458C29.433 81.817 27.144 74.229 27.144 74.229C25.37 69.724 22.813 68.526 22.813 68.526C19.272 66.108 23.082 66.155 23.082 66.155C26.996 66.432 29.056 70.173 29.056 70.173C32.534 76.133 38.185 74.408 40.406 73.416C40.759 70.891 41.769 69.176 42.882 68.199C34.223 67.215 25.119 63.869 25.119 48.925C25.119 44.666 26.638 41.184 29.132 38.457C28.733 37.475 27.392 33.51 29.515 28.138C29.515 28.138 32.789 27.09 40.241 32.139C43.35 31.27 46.687 30.836 50.004 30.823C53.316 30.837 56.654 31.27 59.767 32.139C67.214 27.09 70.483 28.138 70.483 28.138C72.611 33.51 71.271 37.475 70.871 38.457C73.371 41.184 74.879 44.666 74.879 48.925C74.879 63.904 65.762 67.204 57.074 68.166C58.472 69.371 59.72 71.756 59.72 75.395C59.72 80.606 59.673 84.811 59.673 86.09C59.673 87.135 60.374 88.35 62.354 87.963C77.836 82.798 89 68.191 89 50.965C89 29.425 71.539 11.963 49.998 11.963Z"
                             fill="white" />
@@ -73,7 +87,8 @@
                 </a>
 
                 <a href="https://www.instagram.com/_guilherme.henry/" target="__blank">
-                    <svg class="iconSocial" width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="iconSocial" width="100" height="100" viewBox="0 0 100 100" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path class="path"
                             d="M67.961 45.288C67.961 55.207 59.92 63.248 50.001 63.248C40.082 63.248 32.041 55.207 32.041 45.288C32.041 42.493 32.698 39.858 33.836 37.5H14V79.5C14 83.35 17.15 86.5 21 86.5H79C82.85 86.5 86 83.35 86 79.5V37.5H66.165C67.3447 39.9269 67.9588 42.5896 67.961 45.288Z"
                             fill="white" />
@@ -86,11 +101,8 @@
                     </svg>
                 </a>
 
-
-
             </div>
         </div>
-
     </div>
 
     <!-- JS da pagina -->

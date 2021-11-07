@@ -11,6 +11,12 @@
 </head>
 
 <body>
+    <!-- blackScreen - Btn Voltar - FirstStart = false -->
+    <script>
+        function disableBlackScreen() {
+            localStorage.setItem("firstStart", "false");
+        }
+    </script>
 
     <!-- Background Animado -->
     <div id="backgroundMovie">
@@ -34,7 +40,8 @@
 
                 <p> &nbsp;&nbsp;&nbsp;&nbsp;Olá, me chamo Guilherme. 😄 </p>
 
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;Sou de itajubá-MG e atualmente trabalho como Desenvolvedor Java Web na B2ML Sistemas. </p>
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;Sou de itajubá-MG e atualmente trabalho como Desenvolvedor Java Web na B2ML
+                    Sistemas. </p>
 
                 <p> &nbsp;&nbsp;&nbsp;&nbsp;Desde minha adolescência, sempre me interessei pelo mundo da programação.
                     Criando pequenos projetos para jogos através do MS Visual Studio e de outras ferramentas no qual
@@ -53,7 +60,7 @@
 
             </div>
 
-            <a class="hiperlink" href="index.html">
+            <a class="hiperlink" href="index.html" onclick="disableBlackScreen()">
                 <div class="btnVoltar">
                     VOLTAR
                 </div>

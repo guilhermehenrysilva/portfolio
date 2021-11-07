@@ -68,6 +68,26 @@ setInterval(function () {
 }, 30)
 /*END*/
 
+/*On body onload - Set hide to DIV BlackScreen*/
+function closeBlackScreen() {
+    var firstStart = localStorage.getItem("firstStart");
+    if (firstStart == "true") {
+        blackScreenHide();
+        localStorage.setItem("firstStart", "true");
+    } else {
+        document.getElementById("blackScreen").style.display = "none";
+        localStorage.setItem("firstStart", "true");
+    }
+}
+
+setInterval(function blackScreenHide() {
+    document.getElementById("blackScreen").style.display = "none";
+}, 4000)
+/*END*/
+
+
+
+
 
 
 
