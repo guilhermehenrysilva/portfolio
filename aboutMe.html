@@ -11,27 +11,27 @@
 </head>
 
 <body>
-    <!-- blackScreen - Btn Voltar - FirstStart = false -->
+    <!-- LoadingScreen - Btn Voltar - FirstStart = false -->
     <script>
-        function disableBlackScreen() {
+        function loadingScreen() {
             localStorage.setItem("firstStart", "false");
         }
     </script>
 
-    <!-- Background Animado -->
+    <!-- Animated Background -->
     <div id="backgroundMovie">
         <video autoplay loop poster="img/background/background.jpg" class="bg_video">
             <source src="img/background/animatedBackground.mp4" type="video/mp4">
         </video>
     </div>
 
-    <!-- Div transparente -->
+    <!-- Transparency -->
     <div class="container"></div>
 
-    <!-- Div Principal  -->
+    <!-- Main -->
     <div id="conteudo">
 
-        <!-- Div Apresentação Guilherme -->
+        <!-- Presentation Guilherme -->
         <div id="panelMe"></div>
 
         <div id="panelText">
@@ -45,32 +45,28 @@
 
                 <p> &nbsp;&nbsp;&nbsp;&nbsp;Desde minha adolescência, sempre me interessei pelo mundo da programação.
                     Criando pequenos projetos para jogos através do MS Visual Studio e de outras ferramentas no qual
-                    possuía algum
-                    conhecimento na época. </p>
+                    dispunha de conhecimento na época. </p>
 
                 <p> &nbsp;&nbsp;&nbsp;&nbsp;Como analista de suporte de TI, trabalhei na Balteau e em seguida recebi a
                     oportunidade de
                     integrar o team de suporte de TI da Airbus | Helibras. Porem no inicio de 2021, recebi mais uma
                     grande oportunidade visando minha carreira profissional. Sim, a oportunidade para se tornar um
                     Dev Java Junior e integrar o team da Doctor247. Foi nessa hora que decidi virar a chave e me
-                    empenhar totalmente na área de desenvolvimento web. </p>
+                    empenhar totalmente na área de Desenvolvimento Web. </p>
 
-                <p> &nbsp;&nbsp;&nbsp;&nbsp;Sou uma pessoa que tenta sempre deixar o ambiente com um clima leve. Amo
+                <p> &nbsp;&nbsp;&nbsp;&nbsp;Sou uma pessoa que busca sempre deixar o ambiente com clima leve. Amo
                     retirar sorrisos e gargalhadas das pessoas que estão ao meu redor. </p>
 
             </div>
 
-            <a class="hiperlink" href="index.html" onclick="disableBlackScreen()">
+            <!-- btn Voltar -->
+            <a class="hiperlink" href="index.html" onclick="loadingScreen()">
                 <div class="btnVoltar">
                     VOLTAR
                 </div>
             </a>
         </div>
-
-
-
     </div>
 
 </body>
-
 </html>

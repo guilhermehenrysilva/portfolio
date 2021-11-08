@@ -11,24 +11,24 @@
 </head>
 
 <body>
-    <!-- blackScreen - Btn Voltar - FirstStart = false -->
+    <!-- LoadingScreen - Btn Voltar - FirstStart = false -->
     <script>
-        function disableBlackScreen() {
+        function loadingScreen() {
             localStorage.setItem("firstStart", "false");
         }
     </script>
 
-    <!-- Background Animado -->
+    <!-- Animated Background -->
     <div id="backgroundMovie">
         <video autoplay muted loop poster="img/background/background.jpg" class="bg_video">
             <source src="img/background/animatedBackground.mp4" type="video/mp4">
         </video>
     </div>
 
-    <!-- Div transparente -->
+    <!-- Transparency -->
     <div class="container"></div>
 
-    <!-- Div Principal  -->
+    <!-- Main -->
     <div class="matriz">
 
         <div class="panel">
@@ -61,18 +61,14 @@
                 </div>
             </div>
 
-            <a class="hiperlink" href="index.html" onclick="disableBlackScreen()">
+            <!-- btn Voltar -->
+            <a class="hiperlink" href="index.html" onclick="loadingScreen()">
                 <div class="btnVoltar">
                     VOLTAR
                 </div>
             </a>
-
         </div>
-
-
     </div>
 
-
 </body>
-
 </html>

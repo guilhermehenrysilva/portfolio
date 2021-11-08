@@ -9,6 +9,7 @@
     color: rgb(255, 255, 255);
 }
 
+/*Div Main*/
 .matriz{
     display: flex;
     flex-direction: column;
@@ -22,6 +23,7 @@
     z-index: 3000;
 }
 
+/*Div Container*/
 .panel{
     border-color: white;
     border-style: solid;
@@ -40,13 +42,13 @@
     align-items: center;
 }
 
-/*Linhas*/
+/*Lines*/
 .matriz .linha{
     display: flex;
     flex-direction: row;
 }
 
-/*ITEM - Posicao de exibicao dos projetos*/
+/*ITEM - Project display position*/
 .matriz .item{
     width: 300px;
     height: 200px;
@@ -63,6 +65,7 @@
 .matriz .item:hover{
     box-shadow: inset 0 0 6em rgba(250, 248, 249, 0.555), 0 0 3em rgba(255, 255, 255, 0.904);
 }
+/*End*/
 
 @media (max-width: 600px){
     .matriz .linha{

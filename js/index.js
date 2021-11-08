@@ -1,22 +1,23 @@
-/*JS - IMG OPTIONS*/
-/*Seta a imgOptions Padrão*/
+/*IMG OPTIONS - Choice*/
+/*Set imgOptions Default*/
 let escolhendo = false;
 function setImgDefault() {
     document.getElementById("imgOptions").src = "img/options/homeOptions.png";
     escolhendo = false;
 }
 
-/*Seta a img :hover - AboutMe*/
+/*Set img:hover - AboutMe*/
 function setImgAboutMe() {
     document.getElementById("imgOptions").src = "img/options/aboutMeSelect.png";
     escolhendo = true;
 }
 
-/*Seta a img :hover - Projects*/
+/*Set img:hover - Projects*/
 function setImgProjects() {
     document.getElementById("imgOptions").src = "img/options/projectsSelect.png";
     escolhendo = true;
 }
+/*End*/
 
 /*Effect Img Btn Colors*/
 let contador = 1;
@@ -45,6 +46,7 @@ if (!escolhendo) {
         }
     }, 135)
 }
+/*End*/
 
 /*Effect Div Hologram*/
 let bg = document.getElementById('homeOptions');
@@ -55,7 +57,7 @@ for (let i = 0; i < count; i++) {
     bg.appendChild(glitchBox);
 }
 
-setInterval(function () {
+setInterval(function() {
     let glitch = document.getElementsByClassName('box');
     for (let i = 0; i < glitch.length; i++) {
         glitch[i].style.left = Math.floor(Math.random() * 500) + 'vw';
@@ -66,24 +68,24 @@ setInterval(function () {
         glitch[i].style.backgroundPosition = Math.floor(Math.random() * 50) + 'px';
     }
 }, 30)
-/*END*/
+/*End*/
 
-/*On body onload - Set hide to DIV BlackScreen*/
-function closeBlackScreen() {
+/*On body onload - Set hide to DIV LoadingScreen
+this div will be displayed while the browser caches img's to perform the effects*/
+function closeLoadingScreen() {
     var firstStart = localStorage.getItem("firstStart");
     if (firstStart == "true") {
-        blackScreenHide();
-        localStorage.setItem("firstStart", "true");
+        setInterval(function() {
+            document.getElementById("loadingScreen").style.display = "none";
+        }, 2500)
     } else {
-        document.getElementById("blackScreen").style.display = "none";
-        localStorage.setItem("firstStart", "true");
+        setInterval(function() {
+            document.getElementById("loadingScreen").style.display = "none";
+        }, 400)
     }
+    localStorage.setItem("firstStart", "true");
 }
-
-setInterval(function blackScreenHide() {
-    document.getElementById("blackScreen").style.display = "none";
-}, 4000)
-/*END*/
+/*End*/
 
 
 

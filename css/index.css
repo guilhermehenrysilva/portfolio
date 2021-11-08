@@ -10,10 +10,10 @@
         width: 65%;
         height: 100vh;
         overflow: hidden;
-    /*END*/  
+    /*End*/  
     }
 
-    /*Img Options - Principal*/
+    /*Img Options - Default*/
     #homeOptions img {
         position: absolute;
         bottom: 0;
@@ -28,7 +28,7 @@
         background-attachment: fixed;
     }
 
-    /*Div Apresentação Guilherme*/
+    /*Div Presentation Guilherme*/
     #bemVindo {
         z-index: 3000;
         text-align: center;
@@ -42,12 +42,24 @@
         bottom: 15%;
     }
 
+    /*Svg Social Icons*/
     #social svg{
-        height: 10%;
-        width: 10%;
+        height: 8%;
+        width: 8%;
     }
 
-    #blackScreen{
+    .iconSocial{
+        margin-left: 7px;
+        margin-right: 7px;  
+    }
+
+    .iconSocial:hover .path{
+        fill: rgb(134, 14, 214);
+    }
+    /*End*/
+
+    /*Div Loading Screen*/
+    #loadingScreen{
         z-index: 5000;
         display: block;
         background: rgb(14, 1, 34);
@@ -79,7 +91,7 @@
     }
 
     /*Loading Effect*/
-    #blackScreen svg{
+    #loadingScreen svg{
         position: relative;
         width: 150px;
         height: 150px;
@@ -95,7 +107,7 @@
         }
     }
 
-    #blackScreen svg circle{
+    #loadingScreen svg circle{
         width: 100%;
         height: 100%;
         fill: none;
@@ -112,14 +124,12 @@
         0%,100%{
             stroke-dashoffset: 440; 
         }
-
         50%{
             stroke-dashoffset: 0; 
         }
-
         50.1%{
             stroke-dashoffset: 880; 
         }
     }
-    /*END*/
+    /*End*/
 

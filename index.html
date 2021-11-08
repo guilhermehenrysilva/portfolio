@@ -5,34 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guilherme Henrique</title>
+    <title>Guilherme Henrique Silva</title>
     <link rel="stylesheet" type="text/css" href="css/common.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
 </head>
 
-<body onLoad="closeBlackScreen();">
-    <!-- BlackScreen -->
-    <div id="blackScreen">
+<body onLoad="closeLoadingScreen();">
+    <!-- LoadingScreen -->
+    <div id="loadingScreen">
         <p> Guilherme Henrique Silva </p>
-        Portifolio
-    </br></br>
+
+        <!-- Portfolio icon Loading -->
+        <svg width="70" height="50" viewBox="0 0 70 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M13.8581 7.14286H2.45884C1.14898 7.14286 -0.160875 8.28571 0.0161327 10.1429L5.53877 45.8214C5.53877 45.8214 12.088 19.5357 13.3625 13.2143C13.7519 11.3214 15.522 10.7143 16.8318 10.7143H35.099C35.099 10.7143 32.6209 3.28571 32.3731 2.46429C31.9483 0.892857 31.1695 0 29.6118 0H17.8939C16.6194 0 15.4158 0.821429 15.0618 2.28571C14.7432 3.71429 13.8581 7.14286 13.8581 7.14286ZM31.1341 7.14286H16.9735C16.9735 7.14286 18.4603 3.57143 20.0534 3.57143H27.5939C29.2932 3.57143 31.1341 7.14286 31.1341 7.14286ZM9.14972 47.3214C8.05227 49 6.45921 50 4.68913 50H60.3757C62.2874 50 63.6326 48.8929 64.022 47.0357C65.5797 39.2143 69.9695 16.8929 69.9695 16.8929C70.2173 15.1071 68.9074 14.2857 67.7746 14.2857H56.3399V9.03571C56.3399 8.46429 55.4195 7.14286 54.0034 7.14286H40.6925C38.8516 7.14286 37.6125 9.21429 37.6125 9.21429L35.099 14.2857H19.487C18.3541 14.2857 17.2567 14.9643 17.0443 16.0714C17.0443 16.0714 11.4154 40 10.9552 42.25C10.7074 43.5714 10.1764 45.7857 9.14972 47.3214V47.3214ZM54.145 14.2857H38.6392C38.6392 14.2857 40.6925 10.7143 42.6395 10.7143H50.7465C53.26 10.7143 54.145 14.2857 54.145 14.2857V14.2857Z"
+                fill="#860ED6" />
+        </svg>
+
+        <!-- Circle Loading --
         <svg>
             <circle cx="70" cy="70" r="70"></circle>
         </svg>
-
+        -->
     </div>
 
-    <!-- Background Animado -->
+    <!-- Animated Background -->
     <div id="backgroundMovie">
         <video autoplay muted loop poster="img/background/background.jpg" class="bg_video">
             <source src="img/background/animatedBackground.mp4" type="video/mp4">
         </video>
     </div>
 
-    <!-- Div transparente -->
+    <!-- Transparency -->
     <div class="container"></div>
 
-    <!-- Div Options  -->
+    <!-- Options aboutMe/Projects -->
     <div id="conteudo">
         <div id="homeOptions">
             <img id="imgOptions" src="img/options/homeOptions.png" alt="Workplace" usemap="#mapOptions">
@@ -49,16 +56,17 @@
             </map>
         </div>
 
-        <!-- Div Apresentação Guilherme -->
+        <!-- Presentation Guilherme -->
         <div id="bemVindo">
             <p class="titulo"> Oi, seja bem vindo!</p>
             <div class="texto">
-                <p>Este é o meu portifolio de Desenvolvedor!</p>
+                <p>Este é o meu portfolio de Desenvolvedor.</p>
                 <p>Clique em <a class="hiperlink" href="aboutMe.html"> <b>About Me</b> </a> para me conhecer
                     ou em <a class="hiperlink" href="projects.html"> <b>Projects</b> </a> para visualiza-los. </p>
             </div>
 
             <div id="social">
+
                 <a href="mailto:ghs.guilherme.silva@gmail.com?subject=Portfolio Contato - Guilherme Henrique da Silva">
                     <svg class="iconSocial" width="100" height="100" viewBox="0 0 100 100" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +116,7 @@
     <!-- JS da pagina -->
     <script type="text/javascript" src="js/index.js"></script>
 
-    <!-- Google Jquery 
+    <!-- Google Jquery Online
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     -->
 
@@ -118,14 +126,13 @@
     <!-- Jquery imgMapResponsive-->
     <script src="js/img-map-responsive/jquery.rwdImageMaps.js"></script>
 
-    <!-- Chamada do Jquery imgMapResponsive -->
+    <!-- Call - Jquery imgMapResponsive -->
     <script>
         $(document).ready(function (e) {
             $('img[usemap]').rwdImageMaps();
         });
     </script>
     <!-- End -->
-
 
 </body>
 
