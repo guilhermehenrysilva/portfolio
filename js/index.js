@@ -10,12 +10,20 @@ function setImgDefault() {
 function setImgAboutMe() {
     document.getElementById("imgOptions").src = "img/options/aboutMeSelect.png";
     escolhendo = true;
+
+    const audio = new Audio();
+    audio.src = "../midia/button-select.mp3";
+    audio.play();
 }
 
 /*Set img:hover - Projects*/
 function setImgProjects() {
     document.getElementById("imgOptions").src = "img/options/projectsSelect.png";
     escolhendo = true;
+
+    const audio = new Audio();
+    audio.src = "../midia/button-select.mp3";
+    audio.play();
 }
 /*End*/
 
