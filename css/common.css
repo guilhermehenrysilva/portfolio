@@ -4,7 +4,7 @@ body {
 }
   
   /*Animated Background*/
-  .bg_video {
+.bg_video {
     position: fixed;
     right: 0;
     bottom: 0;
@@ -18,7 +18,7 @@ body {
 }
 
    /*Div transparent between AnimatedBackground and ImgOptions*/
-   .container {
+.container {
     background-color: rgb(30, 4, 68);;
     opacity: 30%;
 
@@ -35,33 +35,6 @@ body {
 
     z-index: 1000;
     position: absolute;
-
-}
-
-.titulo {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 60px;
-    line-height: 100%;
-
-    text-align: center;
-    color: rgb(255, 255, 255);
-
-    margin: 2%;
-}
-
-.texto {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 100%;
-
-    text-align: center;
-    color: rgb(255, 255, 255);
-
-    margin: 2%;
 }
 
 .btnVoltar{
