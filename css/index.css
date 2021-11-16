@@ -12,6 +12,8 @@
     }
 
     .texto {
+        text-align: justify;
+        text-justify: inter-word;
         font-family: Arial, Helvetica, sans-serif;
         font-style: normal;
         font-weight: normal;
